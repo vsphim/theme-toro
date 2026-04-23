@@ -1,0 +1,32 @@
+{
+    "name": "vsmov/theme-toro",
+    "description": "VsMov's toro theme",
+    "type": "library",
+    "authors": [
+        {
+            "name": "vsmov",
+            "email": "vsmov@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "vsmov/vsmov-core": "^1.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VsMov\\ThemeToro\\": "src/",
+            "VsMov\\ThemeToro\\Database\\Factories\\": "database/factories/",
+            "VsMov\\ThemeToro\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VsMov\\ThemeToro\\ThemeToroServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
